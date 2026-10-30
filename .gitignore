@@ -1,0 +1,27 @@
+# Compiled class files
+*.class
+
+# Output directories
+bin/
+out/
+target/
+build/
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Java crash logs
+hs_err_pid*
+replay_pid*
+
+# Package files (keep lib/ if you store manual jars)
+# *.jar
+# *.war
+
+# IDE files (optional - uncomment if you do not want to track IDE configs)
+# .vscode/
+# .idea/
+
