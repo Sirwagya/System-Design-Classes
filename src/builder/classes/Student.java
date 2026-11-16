@@ -1,5 +1,4 @@
 package builder.classes;
-
 public class Student {
     private String name ;
     private int batch ;
@@ -60,4 +59,3 @@ public class Student {
         }
     }
 }
-
