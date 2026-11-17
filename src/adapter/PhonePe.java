@@ -1,5 +1,7 @@
 package adapter;
 
+import adapter.interfaces.BankAPI;
+
 public class PhonePe {
     private final BankAPI bankApi;
 
