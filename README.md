@@ -1,18 +1,77 @@
-## Getting Started
+# System Design Classes
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Java implementations of SOLID principles and classic design patterns organized by chapter.
 
-## Folder Structure
+## Project Structure
 
-The workspace contains two folders by default, where:
+```text
+system design/
+├── src/
+│   ├── App.java                                  # Runs all chapter demos
+│   ├── solid/
+│   │   ├── Client.java
+│   │   ├── interfaces/
+│   │   │   ├── CanRun.java
+│   │   │   ├── CanSwim.java
+│   │   │   ├── Flyable.java
+│   │   │   └── Singable.java
+│   │   └── models/
+│   │       ├── Bird.java
+│   │       ├── Eagle.java
+│   │       ├── Ostrich.java
+│   │       ├── Penguin.java
+│   │       └── Sparrow.java
+│   ├── builder/
+│   │   ├── Client.java
+│   │   └── models/
+│   │       └── Student.java
+│   ├── adapter/
+│   │   ├── Client.java
+│   │   ├── PhonePe.java
+│   │   ├── adapters/
+│   │   │   ├── IciciBankAdapter.java
+│   │   │   └── YesBankAdapter.java
+│   │   ├── interfaces/
+│   │   │   └── BankAPI.java
+│   │   └── thirdparty/
+│   │       ├── IciciBank.java
+│   │       └── YesBank.java
+│   └── strategy/
+│       ├── Client.java
+│       ├── GoogleMap.java
+│       ├── enums/
+│       │   └── ModeType.java
+│       ├── factory/
+│       │   └── PathCalculatorFactory.java
+│       ├── interfaces/
+│       │   └── PathCalculator.java
+│       └── strategies/
+│           ├── BikePathCalculator.java
+│           ├── CarPathCalculator.java
+│           └── WalkPathCalculator.java
+├── lib/
+└── .vscode/
+```
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Compile and Run
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Compile all Java sources into `bin/`:
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+```bash
+javac -d bin -sourcepath src src/App.java
+```
 
-## Dependency Management
+Run all demos together:
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+```bash
+java -cp bin App
+```
+
+Or run an individual chapter:
+
+```bash
+java -cp bin solid.Client
+java -cp bin builder.Client
+java -cp bin adapter.Client
+java -cp bin strategy.Client
+```
