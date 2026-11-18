@@ -3,5 +3,12 @@
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
         "lib/**/*.jar"
+    ],
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-27",
+            "path": "/Library/Java/JavaVirtualMachines/jdk-27.jdk/Contents/Home",
+            "default": true
+        }
     ]
 }
