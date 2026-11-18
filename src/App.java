@@ -11,5 +11,11 @@ public class App {
 
         System.out.println("\n=== Strategy Pattern ===");
         strategy.Client.demoStrategy();
+
+        System.out.println("\n=== Decorator Pattern ===");
+        decorator.icecream.Client.demoDecorator();
+
+        System.out.println("\n=== Observer Pattern ===");
+        observor.client.demoObservor();
     }
 }

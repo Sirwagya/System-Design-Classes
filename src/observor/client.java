@@ -7,7 +7,7 @@ public class client {
         demoObservor();
     }
 
-    private static void demoObservor(){
+    public static void demoObservor(){
 
         Amazon amazon = new Amazon();
         Subscriber email = new emailService();

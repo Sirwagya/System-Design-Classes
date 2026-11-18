@@ -10,7 +10,7 @@ public class Client {
         demoDecorator();
     }
 
-    private static void demoDecorator(){
+    public static void demoDecorator(){
         // Create a base IceCream
 
         IceCream iceCream = new OrangeCone();

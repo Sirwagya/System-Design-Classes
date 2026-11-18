@@ -36,19 +36,41 @@ system design/
 │   │   └── thirdparty/
 │   │       ├── IciciBank.java
 │   │       └── YesBank.java
-│   └── strategy/
-│       ├── Client.java
-│       ├── GoogleMap.java
-│       ├── enums/
-│       │   └── ModeType.java
-│       ├── factory/
-│       │   └── PathCalculatorFactory.java
-│       ├── interfaces/
-│       │   └── PathCalculator.java
-│       └── strategies/
-│           ├── BikePathCalculator.java
-│           ├── CarPathCalculator.java
-│           └── WalkPathCalculator.java
+│   ├── strategy/
+│   │   ├── Client.java
+│   │   ├── GoogleMap.java
+│   │   ├── enums/
+│   │   │   └── ModeType.java
+│   │   ├── factory/
+│   │   │   └── PathCalculatorFactory.java
+│   │   ├── interfaces/
+│   │   │   └── PathCalculator.java
+│   │   └── strategies/
+│   │       ├── BikePathCalculator.java
+│   │       ├── CarPathCalculator.java
+│   │       └── WalkPathCalculator.java
+│   ├── decorator/
+│   │   └── icecream/
+│   │       ├── Client.java
+│   │       ├── abstracts/
+│   │       │   └── ToppingDecorator.java
+│   │       ├── classes/
+│   │       │   ├── ButterScotch.java
+│   │       │   ├── Chocolate.java
+│   │       │   ├── OrangeCone.java
+│   │       │   └── Vanilla.java
+│   │       └── interfaces/
+│   │           └── IceCream.java
+│   └── observor/
+│       ├── client.java
+│       ├── classes/
+│       │   ├── Amazon.java
+│       │   ├── emailService.java
+│       │   ├── inventoryService.java
+│       │   └── logisticService.java
+│       └── interfaces/
+│           ├── Publisher.java
+│           └── Subscriber.java
 ├── lib/
 └── .vscode/
 ```
@@ -74,4 +96,6 @@ java -cp bin solid.Client
 java -cp bin builder.Client
 java -cp bin adapter.Client
 java -cp bin strategy.Client
+java -cp bin decorator.icecream.Client
+java -cp bin observor.client
 ```
